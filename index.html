@@ -3,30 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>JS Modal</title>
 </head>
 <body>
-    
-    <div class="cards">
+
+  <main class=".main">
+    <h1>Galery</h1>
+    <div class="gallery-cards">
         <div class="card">
-          <img src="img/pic_1.jpg">
+          <img id="my-card-one"src="img/pic_1.jpg" alt="Lorem Lorem Lorem Ipsum Lorem">
         </div>
         <div class="card">
-          <img src="img/pic_2.jpg">
+          <img id="my-card-two"src="img/pic_2.jpg" alt="Lorem Lorem Lorem Ipsum Lorem">
         </div>
         <div class="card">
-          <img src="img/pic_3.jpg">
+          <img id="my-card-three" src="img/pic_3.jpg" alt="Lorem Lorem Lorem Ipsum Lorem">
         </div>
         <div class="card">
-          <img src="img/pic_4.jpg">
+          <img id="my-card-four" src="img/pic_4.jpg" alt="Lorem Lorem Lorem Ipsum Lorem">
         </div>
       </div>
-      <div class="modal-outer">
+
+      <div id="my-modal-one" class=" modal modal-outer">
         <div class="modal-inner">
+          <div id="img-one" class="image-1">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img-one" src="img/pic_1.jpg">
+            <div id="caption-one" class="caption"></div>
+          </div>
         </div>
       </div>
+
+      <div id="my-modal-two" class=" modal modal-outer">
+        <div class="modal-inner">
+          <div id="img-two" class="image-2">
+            <span class="close close-two">&times;</span>
+            <img class="modal-content" id="img-two" src="img/pic_2.jpg">
+            <div id="caption-two" class="caption"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="my-modal-three" class=" modal modal-outer">
+        <div class="modal-inner">
+          <div id="img-three" class="image-3">
+            <span class="close close-three">&times;</span>
+            <img class="modal-content" id="img-three" src="img/pic_3.jpg">
+            <div id="caption-three" class="caption"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="my-modal-four" class=" modal modal-outer">
+        <div class="modal-inner">
+          <div id="img-four" class="image-4">
+            <span class="close close-four">&times;</span>
+            <img class="modal-content" id="img-four" src="img/pic_4.jpg">
+            <div id="caption-four" class="caption"></div>
+          </div>
+        </div>
+      </div>
+  </main>  
      <!-- Link to JS -->
+     <script src="./js/index.js"></script>
 </body>
 </html>
